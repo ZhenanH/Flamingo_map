@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@amcharts/amcharts4": "4.0.24",
+    "ant-design-pro": "2.2.1",
+    "antd": "latest",
+    "moment": "2",
+    "react": "latest",
+    "react-dom": "latest",
+    "recharts": "1.4.2"
+  },
+  "keywords": [],
+  "name": "dashboard",
+  "description": ""
+}

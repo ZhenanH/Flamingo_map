@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,500,500i,600,600i,700,700i,900,900i");
+
+.App {
+  font-family: "Source Sans Pro";
+  height: 100vh;
+  background: #f0f2f5;
+}
+
+h1,
+h5 {
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.ant-layout {
+  min-height: 80vh;
+}
+
+.logo {
+  width: 132px;
+  margin-top: 24px;
+  height: 19px;
+  background: url(https://pebblepost.io/img/flamingoLogo.png);
+  background-size: cover;
+  float: left;
+  color: #ff6178;
+}
+
+.header,
+.ant-menu-dark {
+  background: #f9f9f9;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #f9f9f9;
+}
+
+.ant-menu-item-selected {
+  color: #777;
+}
+
+.ant-menu-vertical .ant-menu-item:after,
+.ant-menu-vertical-left .ant-menu-item:after,
+.ant-menu-vertical-right .ant-menu-item:after,
+.ant-menu-inline .ant-menu-item:after {
+  border-right: 3px solid #ff6178;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+  color: #241922;
+}
+
+#addresses td {
+  text-transform: uppercase;
+}
+
+.v-md {
+  height: 10px;
+}
+
+.v-lg {
+  height: 20px;
+}
+
+.guide {
+  background-image: linear-gradient(
+    165deg,
+    #fffdfd 33.33%,
+    #ffffff 33.33%,
+    #ffffff 50%,
+    #fffdfd 50%,
+    #fffdfd 83.33%,
+    #ffffff 83.33%,
+    #ffffff 100%
+  );
+  background-size: 231.82px 62.12px;
+}
+
+#dropcard .ant-card-body {
+  padding: 16px;
+}
+
+.minititle {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: black;
+}
+
+#dropcard .ant-card-head-title {
+  font-size: 18px;
+  color: black;
+}
+
+.stat {
+  font-size: 2vh;
+}
+
+.stat small {
+  font-size: 14px;
+}
+
+.ant-card-grid {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.ant-card-grid:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.stat1 {
+  border-right: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+.stat3 {
+  border-right: 1px solid #f3f3f3;
+}
+.stat2 {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+button.xsmall {
+  font-size: 11px;
+  padding: 0 10px;
+}
+
+.mute {
+  color: #aaa;
+}
+
+button.green {
+}
+
+/* 
+#dropcard .ant-card-actions > li:not(:last-child) {
+  border: 0
+} */
