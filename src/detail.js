@@ -49,32 +49,35 @@ export class Detail extends React.Component {
             background: "#fff"
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              padding: "10px 20px",
-              borderBottom: "1px solid #e8e8e8"
-            }}
-          >
-            <a onClick={this.props.goToDashboard}>
-              <Icon type="left" style={{ marginRight: 8 }} />
-            </a>
-            <h2 style={{ margin: "0 0 0 0px" }}>Drop_name_whatever_eh_here </h2>
-          </div>
           <Row
             type="flex"
             align="middle"
-            style={{ padding: "8px 2% 8px 2%", background: "#fcfcfc" }}
+            style={{ padding: "0 2% 0 2%", borderBottom: "1px solid #e8e8e8" }}
           >
-            <Col md={14} xs={14} sm={14}>
+            <Col lg={14} md={12} xs={14} sm={14}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  padding: "10px 0px"
+                }}
+              >
+                <a onClick={this.props.goToDashboard}>
+                  <Icon type="left" style={{ marginRight: 8 }} />
+                </a>
+                <h2 style={{ margin: "0 0 0 0px" }}>
+                  Drop_name_whatever_eh_here{" "}
+                </h2>
+              </div>
+            </Col>
+            <Col lg={6} md={8} xs={0} sm={0}>
               <Tag color="blue">Postcard</Tag>
               <Tag color="blue">4x6</Tag>
               <Tag color="green">User 1</Tag>
               <Tag color="green">User 2</Tag>
             </Col>
-            <Col md={10} xs={10} sm={10} style={{ textAlign: "right" }}>
-              Mailed 12/25/2018
+            <Col lg={4} md={4} xs={10} sm={10} style={{ textAlign: "right" }}>
+              <b>Mailed</b> 12/25/2018
             </Col>
           </Row>
         </Content>
@@ -94,7 +97,7 @@ export class Detail extends React.Component {
 
             <Tabs size="large">
               <TabPane tab="Recent Activity" key="1">
-                <Row>
+                <Row gutter={48}>
                   <Col md={14} sm={24} xs={24}>
                     <Reports />
                   </Col>

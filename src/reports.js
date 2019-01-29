@@ -1,6 +1,6 @@
 import React from "react";
 import { Scoreboard } from "./scoreboard";
-import { DatePicker } from "antd";
+import { DatePicker, Icon } from "antd";
 import { Bar } from "ant-design-pro/lib/Charts";
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
@@ -13,7 +13,7 @@ export class Reports extends React.Component {
   componentDidMount() {
     let chart = am4core.create("chartdiv", am4charts.XYChart);
 
-    chart.paddingRight = 25;
+    chart.paddingRight = "4%";
 
     let data = [];
     let visits = 10;
@@ -57,11 +57,19 @@ export class Reports extends React.Component {
   render() {
     return (
       <div>
+        <div
+          style={{
+            padding: "12px 0 24px 0",
+            display: "flex",
+            alignItems: "center"
+          }}
+        >
+          <RangePicker size="small" />
+          <span style={{ flex: 1 }} />
+          <Icon type="download" style={{ fontSize: 18 }} />
+        </div>
         <Scoreboard />
 
-        <div style={{ padding: 24, textAlign: "center" }}>
-          <RangePicker size="small" />
-        </div>
         <div style={{ marginBottom: 24 }}>
           <div id="chartdiv" style={{ width: "100%", height: "300px" }} />
         </div>
