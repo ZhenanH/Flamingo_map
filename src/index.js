@@ -35,7 +35,7 @@ import {
   Cell
 } from "recharts";
 import { Dashboard } from "./dashboard";
-
+import { CreateNewCampaign } from "./createNewCampaign";
 import "antd/dist/antd.css";
 import "./index.css";
 
@@ -149,7 +149,7 @@ const gridStyle = {
 
 class App extends React.Component {
   state = {
-    activeKey: "2",
+    activeKey: "1",
     visible: false,
     showMenu: false
   };
@@ -288,6 +288,9 @@ class App extends React.Component {
             <TabPane tab="Tab 1" key="1">
               {" "}
               <Dashboard
+                createNew={() => {
+                  this.setState({ activeKey: "3" });
+                }}
                 goToDetail={() => {
                   this.setState({ activeKey: "2" });
                 }}
@@ -310,7 +313,11 @@ class App extends React.Component {
               />
             </TabPane>
             <TabPane tab="Tab 3" key="3">
-              Content of Tab Pane 3
+              <CreateNewCampaign
+                goToDashboard={() => {
+                  this.setState({ activeKey: "1" });
+                }}
+              />
             </TabPane>
           </Tabs>
 

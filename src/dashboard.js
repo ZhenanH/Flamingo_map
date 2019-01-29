@@ -220,6 +220,7 @@ export class Dashboard extends React.Component {
               >
                 <Col style={{ textAlign: "center" }}>
                   <Button
+                    onClick={this.props.createNew}
                     type="primary"
                     style={{
                       background: "#FF6178",
