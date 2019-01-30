@@ -99,6 +99,7 @@ export class Detail extends React.Component {
               <TabPane tab="Recent Activity" key="1">
                 <Row gutter={48}>
                   <Col md={14} sm={24} xs={24}>
+                    <h3>Lorem Ipsum</h3>
                     <Reports />
                   </Col>
                   <Col md={10} sm={24} xs={24}>
@@ -106,7 +107,10 @@ export class Detail extends React.Component {
                   </Col>
                 </Row>
               </TabPane>
-              <TabPane tab="Transaction Match" key="2">
+              <TabPane tab="Creatives" key="2">
+                Creatives
+              </TabPane>
+              <TabPane tab="Transaction Match" key="3">
                 Transaction Match
               </TabPane>
             </Tabs>

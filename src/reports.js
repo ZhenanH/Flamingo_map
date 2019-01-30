@@ -66,7 +66,10 @@ export class Reports extends React.Component {
         >
           <RangePicker size="small" />
           <span style={{ flex: 1 }} />
-          <Icon type="download" style={{ fontSize: 18 }} />
+          <a href="#">
+            <Icon type="download" style={{ fontSize: 18, marginRight: 4 }} />
+            Download
+          </a>
         </div>
         <Scoreboard />
 

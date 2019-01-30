@@ -179,7 +179,7 @@ export class Dashboard extends React.Component {
               <h2
                 style={{
                   //textTransform: "uppercase",
-                  fontWeight: 600,
+                  fontWeight: 400,
                   color: "#42464b"
                 }}
               >
@@ -274,7 +274,7 @@ export class Dashboard extends React.Component {
           </Sider>
           <Content
             style={{
-              padding: "3% 3%",
+              padding: "2% 3%",
               minHeight: 280,
               heightx: "100"
             }}
@@ -380,7 +380,7 @@ export class Dashboard extends React.Component {
                       style={{
                         textAlign: "right",
                         padding: 10,
-                        marginBottom: 10,
+
                         background: "#fcfcfc"
                         //borderBottom: "1px solid #eee"
                       }}
@@ -389,11 +389,8 @@ export class Dashboard extends React.Component {
                     </Col>
                   </Row>
 
-                  <Row
-                    gutter={16}
-                    style={{ padding: 10, paddingTop: 0, paddingRight: 15 }}
-                  >
-                    <Col md={12} style={{ margin: "12px 0 24px 0" }}>
+                  <Row gutter={32} style={{ margin: 0 }}>
+                    <Col md={12} style={{ margin: "12px 0 12px 0" }}>
                       <Card.Grid style={gridStyle} className="stat1">
                         <span class="minititle">Mail Sent</span>
                         <div class="stat">750,000</div>
@@ -443,13 +440,13 @@ export class Dashboard extends React.Component {
                         </ResponsiveContainer>
                       </Card.Grid>
                     </Col>
-                    <Col md={11} offset={1}>
+                    <Col md={12}>
                       <Row gutter={16} style={{ paddingTop: 10 }}>
                         <Col
                           md={12}
+                          sm={24}
                           style={{
-                            textAlign: "center",
-                            margin: "24px 0 24px 0"
+                            textAlign: "center"
                           }}
                         >
                           <img
@@ -464,9 +461,9 @@ export class Dashboard extends React.Component {
                         </Col>
                         <Col
                           md={12}
+                          sm={24}
                           style={{
-                            textAlign: "center",
-                            margin: "24px 0 24px 0"
+                            textAlign: "center"
                           }}
                         >
                           <img
@@ -476,14 +473,6 @@ export class Dashboard extends React.Component {
                             style={{ border: "1px solid #f9f9f9" }}
                           />
                           <span class="">Back</span>
-                        </Col>
-                      </Row>
-                      <Row gutter={16} style={{ paddingTop: 5 }}>
-                        <Col style={{ textAlign: "center" }}>
-                          <Button size="small" className="xsmall">
-                            <Icon type="zoom-in" /> Preview
-                          </Button>
-                          <div className="v-md" />
                         </Col>
                       </Row>
                     </Col>
