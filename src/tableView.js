@@ -3,80 +3,35 @@ import { Table, Tooltip, Icon } from "antd";
 
 const columns = [
   {
-    title: "Status",
+    title: "#",
     dataIndex: "status",
-    key: "status",
-    render: status => {
-      if (status == 1) {
-        return (
-          <Icon
-            type="check-circle"
-            theme="twoTone"
-            twoToneColor="#52c41a"
-            style={{ fontSize: 11 }}
-          />
-        );
-      } else {
-        return (
-          <Icon
-            type="stop"
-            theme="twoTone"
-            twoToneColor="#aa0000"
-            style={{ fontSize: 11 }}
-          />
-        );
-      }
-    },
-    align: "center"
+    key: "status"
   },
   {
-    title: "Name",
-    dataIndex: "name",
-    key: "name"
+    title: "Date",
+    dataIndex: "date",
+    key: "date"
   },
-
   {
-    title: <Icon type="qrcode" />,
-    dataIndex: "qrscan",
-    key: "qrscan",
-    render: qrscan => {
-      if (qrscan == 1) {
-        return (
-          <Tooltip placement="top" title="1/24/2019">
-            <Icon type="check" />
-          </Tooltip>
-        );
-      }
-    }
+    title: "Tools",
+    dataIndex: "tools",
+    key: "tools",
+    render: () => <Icon type="ellipsis" />
   }
 ];
 
 const data = [
   {
-    status: 1,
+    status: "1",
     key: "1",
-    name: "John Brown",
-    address: "New York No. 1 Lake Park",
-    address2: "#513",
-    city: "Brooklyn",
-    state: "NY",
-    zip: "11231",
-
-    mailDate: "1/15/2019",
-    arrivalDate: "1/21/2019",
-    qrscan: 1
+    date: "1/15/2019",
+    tools: "..."
   },
   {
-    status: 0,
-    key: "2",
-    name: "Sam Smith",
-    address: "123 Upper Road",
-    address2: "",
-    city: "Brooklyn",
-    state: "NY",
-    zip: "11231",
-    mailDate: "-",
-    arrivalDate: "-"
+    status: "2",
+    key: "1",
+    date: "1/20/2019",
+    tools: "..."
   }
 ];
 
@@ -89,6 +44,7 @@ export class TableView extends React.Component {
         dataSource={data}
         size="small"
         id="addresses"
+        style={{ marginBottom: 24 }}
       />
     );
   }

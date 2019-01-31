@@ -45,7 +45,7 @@ export class TransactionMatch extends React.Component {
     return (
       <Content style={{ padding: "12px 12px" }}>
         <Row gutter={64}>
-          <Col md={8}>
+          <Col lg={12} md={24}>
             <h2>Gauge Campaign Performance with Transaction Match</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -60,13 +60,16 @@ export class TransactionMatch extends React.Component {
               src="./image.png"
               style={{ width: "100%", marginBottom: 24 }}
             />
-            <Steps direction="vertical" size="small" current={1}>
-              <Step title="Finished" description="This is a description." />
-              <Step title="In Progress" description="This is a description." />
-              <Step title="Waiting" description="This is a description." />
-            </Steps>
+            <div class="code-box">
+              <h3>File Format</h3>
+              <pre>
+                <span>Customer ID, Order Amount, Order Date, Order ID</span>
+                <span>12315,$500,12/24/1987,7998</span>
+                <span>89072,$1500,12/26/1987,7999</span>
+              </pre>
+            </div>
           </Col>
-          <Col md={8}>
+          <Col lg={6} md={24}>
             <div style={{ background: "#fafafa", marginBottom: 24 }}>
               <Dragger {...props} style={{ padding: 20 }}>
                 <p className="ant-upload-drag-icon">
@@ -79,22 +82,13 @@ export class TransactionMatch extends React.Component {
                 </p>
               </Dragger>
             </div>
-            <div />
-
-            <div class="code-box">
-              <h3>File Format</h3>
-              <pre>
-                <span>Customer ID, Order Amount, Order Date, Order ID</span>
-                <span>12315,$500,12/24/1987,7998</span>
-                <span>89072,$1500,12/26/1987,7999</span>
-              </pre>
-            </div>
-          </Col>
-
-          <Col md={8}>
             <h3>Previous Transaction Match</h3>
             <TableView />
-            <h3 style={{ marginTop: 24 }}>FAQs</h3>
+            <div />
+          </Col>
+
+          <Col lg={6} md={24}>
+            <h3 style={{}}>FAQs</h3>
             <Divider style={{ marginBottom: 10 }} />
             <Collapse bordered={false}>
               <Panel header="The Question" key="1" />

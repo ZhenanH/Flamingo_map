@@ -47,7 +47,7 @@ export class Detail extends React.Component {
         <Content
           style={{
             margin: "0 0 0 0",
-            background: "#fff"
+            background: "#E2E7EE"
           }}
         >
           <Row
@@ -60,13 +60,28 @@ export class Detail extends React.Component {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  padding: "10px 0px"
+                  padding: "10px 0px",
+                  position: "relative"
                 }}
               >
-                <a onClick={this.props.goToDashboard}>
-                  <Icon type="left" style={{ marginRight: 8 }} />
+                <a
+                  onClick={this.props.goToDashboard}
+                  style={{
+                    position: "absolute",
+                    color: "gray",
+                    height: "100%",
+
+                    display: "flex",
+                    alignItems: "center",
+                    background: "rgba(0,0,0,0.04)",
+                    width: "36px",
+                    marginLeft: "-24px",
+                    justifyContent: "center"
+                  }}
+                >
+                  <Icon type="left" style={{ fontSize: 12 }} />
                 </a>
-                <h2 style={{ margin: "0 0 0 0px" }}>
+                <h2 style={{ margin: "0 0 0 24px" }}>
                   Drop_name_whatever_eh_here{" "}
                 </h2>
               </div>
@@ -96,7 +111,11 @@ export class Detail extends React.Component {
                   `}
             </style>
 
-            <Tabs size="large" activeKey={this.state.selectedKey} onChange={(selectedKey)=>this.setState({selectedKey})}>
+            <Tabs
+              size="large"
+              activeKey={this.state.selectedKey}
+              onChange={selectedKey => this.setState({ selectedKey })}
+            >
               <TabPane tab="Recent Activity" key="1">
                 <Row gutter={48}>
                   <Col md={14} sm={24} xs={24}>
@@ -109,10 +128,10 @@ export class Detail extends React.Component {
                 </Row>
               </TabPane>
               <TabPane tab="Campaign Info" key="2">
-               Campaign Info
+                Campaign Info
               </TabPane>
               <TabPane tab="Transaction Match" key="3">
-                <TransactionMatch/>
+                <TransactionMatch />
               </TabPane>
             </Tabs>
           </Content>
