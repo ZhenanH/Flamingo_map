@@ -21,6 +21,7 @@ export class Scoreboard extends React.Component {
                 textTransform: "uppercase",
                 padding: "0",
                 fontSize: "14px",
+                fontWeight: 600,
                 color: "rgba(0,0,0,0.65)"
               }}
               bodyStyle={{
@@ -55,7 +56,8 @@ export class Scoreboard extends React.Component {
                 textTransform: "uppercase",
                 padding: "0",
                 fontSize: "14px",
-                color: "rgba(0,0,0,0.65)"
+                color: "rgba(0,0,0,0.65)",
+                fontWeight: 600
               }}
               bodyStyle={{
                 height: 80,
@@ -88,7 +90,8 @@ export class Scoreboard extends React.Component {
                 textTransform: "uppercase",
                 padding: "0",
                 fontSize: "14px",
-                color: "rgba(0,0,0,0.65)"
+                color: "rgba(0,0,0,0.65)",
+                fontWeight: 600
               }}
               bodyStyle={{
                 height: 80,
@@ -122,7 +125,8 @@ export class Scoreboard extends React.Component {
                 textTransform: "uppercase",
                 padding: "0",
                 fontSize: "14px",
-                color: "rgba(0,0,0,0.65)"
+                color: "rgba(0,0,0,0.65)",
+                fontWeight: 600
               }}
               bodyStyle={{
                 height: 80,

@@ -38,7 +38,7 @@ export class Detail extends React.Component {
     return (
       <Content
         style={{
-          padding: "2% 2% 0 2%",
+          padding: "20px",
           maxWidth: "1400px",
           margin: "auto",
           width: "100%"
