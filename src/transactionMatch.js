@@ -43,7 +43,7 @@ export class TransactionMatch extends React.Component {
 
   render() {
     return (
-      <Content style={{}}>
+      <Content style={{ padding: "12px 12px" }}>
         <Row gutter={64}>
           <Col md={8}>
             <h2>Gauge Campaign Performance with Transaction Match</h2>
