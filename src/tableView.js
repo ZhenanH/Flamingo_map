@@ -34,41 +34,7 @@ const columns = [
     dataIndex: "name",
     key: "name"
   },
-  {
-    title: "Address",
-    dataIndex: "address",
-    key: "address"
-  },
-  {
-    title: "Addr. 2",
-    dataIndex: "address2",
-    key: "address2"
-  },
-  {
-    title: "City",
-    dataIndex: "city",
-    key: "city"
-  },
-  {
-    title: "State",
-    dataIndex: "state",
-    key: "state"
-  },
-  {
-    title: "Zip",
-    dataIndex: "zip",
-    key: "zip"
-  },
-  {
-    title: "Mailed",
-    dataIndex: "mailDate",
-    key: "mailDate"
-  },
-  {
-    title: "Arrived",
-    dataIndex: "arrivalDate",
-    key: "arrivalDate"
-  },
+
   {
     title: <Icon type="qrcode" />,
     dataIndex: "qrscan",
@@ -117,7 +83,13 @@ const data = [
 export class TableView extends React.Component {
   render() {
     return (
-      <Table columns={columns} dataSource={data} size="middle" id="addresses" />
+      <Table
+        pagination={false}
+        columns={columns}
+        dataSource={data}
+        size="small"
+        id="addresses"
+      />
     );
   }
 }
