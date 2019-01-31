@@ -149,7 +149,7 @@ const gridStyle = {
 
 class App extends React.Component {
   state = {
-    activeKey: "1",
+    activeKey: "2",
     visible: false,
     showMenu: false
   };

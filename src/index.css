@@ -232,3 +232,30 @@ button.xsmall {
   text-transform: uppercase;
   color: #868686;
 }
+
+
+.code-box pre {
+  font-family: monospace;
+  background-color: #fff;
+  margin: 12px auto;
+  border: 1px solid #ddd;
+  line-height: 0;
+  counter-reset: line;
+    
+}
+
+.code-box span {
+  display: block;
+  line-height: 2em;
+}
+
+.code-box span:before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  padding: 0 .5em;
+  margin-right: .5em;
+  color: #888
+}
+

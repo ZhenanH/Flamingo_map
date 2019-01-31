@@ -16,13 +16,14 @@ import "./index.css";
 
 import { TableView } from "./tableView";
 import { Reports } from "./reports";
-import { Map } from "./map";
+import { TransactionMatch } from "./transactionMatch";
+//import { Map } from "./map";
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 const TabPane = Tabs.TabPane;
 export class Detail extends React.Component {
   state = {
-    selectedKey: "1",
+    selectedKey: "3",
     collapsed: false,
     showMenu: false
   };
@@ -95,7 +96,7 @@ export class Detail extends React.Component {
                   `}
             </style>
 
-            <Tabs size="large">
+            <Tabs size="large" activeKey={this.state.selectedKey} onChange={(selectedKey)=>this.setState({selectedKey})}>
               <TabPane tab="Recent Activity" key="1">
                 <Row gutter={48}>
                   <Col md={14} sm={24} xs={24}>
@@ -103,15 +104,15 @@ export class Detail extends React.Component {
                     <Reports />
                   </Col>
                   <Col md={10} sm={24} xs={24}>
-                    <Map />
+                    {/* <Map /> */}
                   </Col>
                 </Row>
               </TabPane>
-              <TabPane tab="Creatives" key="2">
-                Creatives
+              <TabPane tab="Campaign Info" key="2">
+               Campaign Info
               </TabPane>
               <TabPane tab="Transaction Match" key="3">
-                Transaction Match
+                <TransactionMatch/>
               </TabPane>
             </Tabs>
           </Content>
