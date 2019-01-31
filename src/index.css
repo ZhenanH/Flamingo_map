@@ -233,7 +233,6 @@ button.xsmall {
   color: #868686;
 }
 
-
 .code-box pre {
   font-family: monospace;
   background-color: #fff;
@@ -241,7 +240,6 @@ button.xsmall {
   border: 1px solid #ddd;
   line-height: 0;
   counter-reset: line;
-    
 }
 
 .code-box span {
@@ -254,8 +252,11 @@ button.xsmall {
   content: counter(line);
   display: inline-block;
   border-right: 1px solid #ddd;
-  padding: 0 .5em;
-  margin-right: .5em;
-  color: #888
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  color: #888;
 }
 
+.link-block:hover {
+  background: rgba(0, 0, 0, 0.05);
+}

@@ -47,13 +47,16 @@ export class Detail extends React.Component {
         <Content
           style={{
             margin: "0 0 0 0",
-            background: "#E2E7EE"
+            background: "#f7f7f9"
           }}
         >
           <Row
             type="flex"
             align="middle"
-            style={{ padding: "0 2% 0 2%", borderBottom: "1px solid #e8e8e8" }}
+            style={{
+              padding: "0 24px 0 24px",
+              borderBottom: "1px solid #e8e8e8"
+            }}
           >
             <Col lg={14} md={12} xs={14} sm={14}>
               <div
@@ -65,6 +68,7 @@ export class Detail extends React.Component {
                 }}
               >
                 <a
+                  class="link-block"
                   onClick={this.props.goToDashboard}
                   style={{
                     position: "absolute",
@@ -73,7 +77,7 @@ export class Detail extends React.Component {
 
                     display: "flex",
                     alignItems: "center",
-                    background: "rgba(0,0,0,0.04)",
+
                     width: "36px",
                     marginLeft: "-24px",
                     justifyContent: "center"
@@ -81,7 +85,7 @@ export class Detail extends React.Component {
                 >
                   <Icon type="left" style={{ fontSize: 12 }} />
                 </a>
-                <h2 style={{ margin: "0 0 0 24px" }}>
+                <h2 style={{ margin: "0 0 0 12px" }}>
                   Drop_name_whatever_eh_here{" "}
                 </h2>
               </div>
