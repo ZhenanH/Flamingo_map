@@ -43,7 +43,7 @@ export class Scoreboard extends React.Component {
 
           <Col lg={6} md={12} sm={12} xs={12} style={{ marginBottom: 8 }}>
             <Card
-              title="DELIVERD"
+              title="DELIVERED"
               bordered={true}
               style={{
                 textAlign: "center",
