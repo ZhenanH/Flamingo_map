@@ -169,7 +169,7 @@ export class Dashboard extends React.Component {
       >
         <div
           style={{
-            padding: "10px 3% 0px",
+            padding: "10px 20px 0px",
             margin: "0",
             background: "#fff"
           }}
@@ -228,7 +228,7 @@ export class Dashboard extends React.Component {
                       width: "95%"
                     }}
                   >
-                    Create New Drop
+                    Create Campaign
                   </Button>
                 </Col>
               </Row>
@@ -239,8 +239,10 @@ export class Dashboard extends React.Component {
               >
                 <Menu.Item key="1">
                   <Icon type="mail" />
-                  Mail Drops
+                  Campaigns
                 </Menu.Item>
+
+                {/*
 
                 <SubMenu
                   key="sub1"
@@ -260,7 +262,7 @@ export class Dashboard extends React.Component {
                     Creatives
                   </Menu.Item>
                 </SubMenu>
-
+*/}
                 <Menu.Item key="4">
                   <Icon type="book" />
                   Docs
@@ -281,11 +283,11 @@ export class Dashboard extends React.Component {
           >
             <Row style={{ display: "flex", alignItems: "center" }} gutter={16}>
               <Col md={12} sm={12} xs={12}>
-                <h2 style={{ color: "black", fontSize: 20 }}>Mail Drops</h2>
+                <h2 style={{ color: "black", fontSize: 20 }}>Campaigns</h2>
               </Col>
               <Col md={12} sm={12} xs={12} style={{ textAlign: "right" }}>
                 <Search
-                  placeholder="Search Drops"
+                  placeholder="Search Campaigns"
                   size="small"
                   onSearch={value => console.log(value)}
                   style={{ width: "100%", marginBottom: 10 }}
