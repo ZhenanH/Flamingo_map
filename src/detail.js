@@ -121,15 +121,17 @@ export class Detail extends React.Component {
               onChange={selectedKey => this.setState({ selectedKey })}
             >
               <TabPane tab="Recent Activity" key="1">
-                <Row gutter={48}>
-                  <Col md={14} sm={24} xs={24}>
-                    <h3>Lorem Ipsum</h3>
-                    <Reports />
-                  </Col>
-                  <Col md={10} sm={24} xs={24}>
-                    {/* <Map /> */}
-                  </Col>
-                </Row>
+                <Content style={{ padding: "12px 12px" }}>
+                  <Row gutter={48}>
+                    <Col md={14} sm={24} xs={24}>
+                      <h3>Lorem Ipsum</h3>
+                      <Reports />
+                    </Col>
+                    <Col md={10} sm={24} xs={24}>
+                      {/* <Map /> */}
+                    </Col>
+                  </Row>
+                </Content>
               </TabPane>
               <TabPane tab="Campaign Info" key="2">
                 Campaign Info
