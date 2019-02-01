@@ -235,7 +235,7 @@ class App extends React.Component {
           >
             <div
               style={{
-                padding: "0px 4%",
+                padding: "0px 20px",
                 maxWidth: "1400px",
                 margin: "auto",
                 width: "100%"
